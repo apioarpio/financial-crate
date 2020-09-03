@@ -1,5 +1,5 @@
 import React from 'react';
-import CustomerCreateForm from './Form';
+import CustomerCreateForm from '../components/Form';
 
 
 export default function CustomerCreatePage(): JSX.Element {

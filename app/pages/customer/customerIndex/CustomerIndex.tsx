@@ -9,9 +9,8 @@ export default function CustomerIndexPage(): JSX.Element {
 
   return (
     <div>
-      <h1>Customers Index</h1>
-      <Button><Link to='/customer/create'>Cliente</Link></Button>
-      {path}
+      <h1>Cliesnte</h1>
+      <Button><Link to='/customer/create'>Novo Cliente</Link></Button>
       <Switch>
         <Route path={`${path}/create`} component={CustomerCreatePage}/>
       </Switch>
