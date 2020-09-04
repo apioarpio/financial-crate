@@ -3,6 +3,7 @@ import React from 'react';
 import StoreFormComponent from './StoreFormComponent';
 import CustomerFormComponent from './CustomerFormComponent';
 import TaxTableFormComponent from './TaxTableFormComponent';
+import CustomerInfoTableComponent from './CustomerInfoTableComponent';
 
 export default function AdditiveForm(): JSX.Element {
 
@@ -19,6 +20,9 @@ export default function AdditiveForm(): JSX.Element {
       <Row>
         <Col span="12" style={{ padding: 10 }}>
           <TaxTableFormComponent/>
+        </Col>
+        <Col span="12" style={{ padding: 10 }}>
+         <CustomerInfoTableComponent/>
         </Col>
       </Row>
     </Form>

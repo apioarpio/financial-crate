@@ -54,7 +54,7 @@ export default function Home(): JSX.Element {
             <Route path='/additive/create' component={AdditiveCreate}/>
           </Switch>
         </Content>
-        <Footer style={{ textAlign: 'center' }}>Task Crate ©2018 Created by Apioarpio Ferreira</Footer>
+        <Footer style={{ textAlign: 'center' }}>Task Crate ©2020 Created by Apioarpio Ferreira</Footer>
       </Layout>
     </Layout>
   );

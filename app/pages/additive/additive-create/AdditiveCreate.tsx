@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import AdditiveForm from '../components/AdditiveForm';
 import Header from './components/header/Header';
-import {AddAdctiveItemsComponent} from '../components/AddAdctiveItemsComponent';
+import { AddAdditiveItemsComponent } from '../components/AddAddiveItemsComponent';
+import { Row, Col } from 'antd';
+import AddAdditiveItemFormComponent from '../components/AddAdditiveItemFormComponent';
 
 
 export default function AdditiveCreatePage(): JSX.Element {
@@ -11,7 +13,18 @@ export default function AdditiveCreatePage(): JSX.Element {
     if (navigate === 'createAddictive') {
       return <AdditiveForm/>;
     } else if (navigate === 'addItems') {
-      return <AddAdctiveItemsComponent/>;
+      return (
+        <Row>
+          <Col span="24">
+            <AddAdditiveItemFormComponent/>
+          </Col>
+          <Col span="24">
+            <AddAdditiveItemsComponent/>
+          </Col>
+        </Row>
+      );
+    } else {
+      return;
     }
   };
 
